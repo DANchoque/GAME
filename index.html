@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pared de Propaganda</title>
+  <style>
+    body {
+      background-color: #111;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 40px;
+      color: #fff;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      color: #ffcc00;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .muro {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: max-content;
+      margin: auto;
+    }
+
+    .fila {
+      display: flex;
+      gap: 15px;
+    }
+
+    .fila:nth-child(even) {
+      margin-left: 80px; /* desplazamiento tipo ladrillos */
+    }
+
+    .ladrillo {
+      width: 200px;
+      height: 120px;
+      border: 3px solid #ffcc00;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .ladrillo:hover {
+      transform: scale(1.05);
+    }
+
+    .ladrillo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<h2>¡Promociones Especiales!</h2>
+
+<div class="muro">
+  <div class="fila">
+    <div class="ladrillo"><img src="img1.jpg" alt="Promo 1"></div>
+    <div class="ladrillo"><img src="img2.jpg" alt="Promo 2"></div>
+    <div class="ladrillo"><img src="img3.jpg" alt="Promo 3"></div>
+  </div>
+  <div class="fila">
+    <div class="ladrillo"><img src="img4.jpg" alt="Promo 4"></div>
+    <div class="ladrillo"><img src="img5.jpg" alt="Promo 5"></div>
+    <div class="ladrillo"><img src="img6.jpg" alt="Promo 6"></div>
+  </div>
+  <div class="fila">
+    <div class="ladrillo"><img src="img7.jpg" alt="Promo 7"></div>
+    <div class="ladrillo"><img src="img8.jpg" alt="Promo 8"></div>
+    <div class="ladrillo"><img src="img9.jpg" alt="Promo 9"></div>
+  </div>
+</div>
+
+</body>
+</html>
